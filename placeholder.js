@@ -252,8 +252,8 @@
             inputElemMarginLeft = _getStyle(inputElem, 'margin-left'),
             inputElemClientRect = _getBoundingClientRect(inputElem);
 
-        inputElemHeight = (inputElemHeight == 'auto') ? _getBoundingClientRect(inputElem).bottom - _getBoundingClientRect(inputElem).top : inputElemHeight;
-        inputElemLineHeight = (inputElemLineHeight == 'normal') ? inputElemHeight : inputElemLineHeight;
+        /*inputElemHeight = (inputElemHeight == 'auto') ? _getBoundingClientRect(inputElem).bottom - _getBoundingClientRect(inputElem).top : inputElemHeight;
+        inputElemLineHeight = (inputElemLineHeight == 'normal') ? inputElemHeight : inputElemLineHeight;*/
 
         inputElemOuterHeight = inputElemClientRect.bottom - inputElemClientRect.top;
         inputElemOuterWidth = inputElemClientRect.right - inputElemClientRect.left;
