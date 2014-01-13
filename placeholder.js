@@ -252,9 +252,6 @@
             inputElemMarginLeft = _getStyle(inputElem, 'margin-left'),
             inputElemClientRect = _getBoundingClientRect(inputElem);
 
-        /*inputElemHeight = (inputElemHeight == 'auto') ? _getBoundingClientRect(inputElem).bottom - _getBoundingClientRect(inputElem).top : inputElemHeight;
-        inputElemLineHeight = (inputElemLineHeight == 'normal') ? inputElemHeight : inputElemLineHeight;*/
-
         inputElemOuterHeight = inputElemClientRect.bottom - inputElemClientRect.top;
         inputElemOuterWidth = inputElemClientRect.right - inputElemClientRect.left;
 
@@ -266,10 +263,6 @@
             'cursor': 'text',
             'position': 'absolute',
             'padding-left': this.options.paddingLeft + 'px',
-            // 'height': parseInt(inputElemHeight) + parseInt(inputElemBorderTopWidth) + parseInt(inputElemBorderBottomWidth) + 'px',
-            // 'line-height': parseInt(inputElemLineHeight) + parseInt(inputElemBorderTopWidth) + parseInt(inputElemBorderBottomWidth) + 'px',
-            // 'padding-top': inputElemPaddingTop,
-            // 'padding-bottom': inputElemPaddingBottom,
             'width': Math.max(inputElemOuterWidth - this.options.paddingLeft, 0) + 'px',
             'height': inputElemOuterHeight + 'px',
             'line-height': inputElemOuterHeight + 'px',
