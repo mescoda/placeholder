@@ -128,7 +128,7 @@
             placeholderPuppet,
             self = this;
 
-        if(inputElem && !('placeholder' in document.createElement('input')) && (inputElem['placeholder']) ) {
+        if(inputElem && !('placeholder' in document.createElement('input')) && (inputElem.getAttribute('placeholder')) ) {
 
             this.createPlaceholderPuppet();
             placeholderPuppet =  this.placeholderPuppet;
@@ -237,7 +237,8 @@
     };
     Placeholder.prototype.createPlaceholderPuppet = function() {
         var inputElem = this.options.inputElem,
-            placeholderText = inputElem['placeholder'];
+            placeholderText = inputElem.getAttribute('placeholder');
+
 
         var inputElemHeight = _getStyle(inputElem, 'height'),
             inputElemLineHeight = _getStyle(inputElem, 'line-height'),
